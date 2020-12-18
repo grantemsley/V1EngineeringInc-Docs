@@ -935,6 +935,20 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#skr-pro" class="md-nav__link">
+    SKR Pro
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rambo" class="md-nav__link">
+    RAMBo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#ramps" class="md-nav__link">
     Ramps
   </a>
@@ -955,13 +969,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#rambo" class="md-nav__link">
-    RAMBo
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -976,8 +983,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#mini-rambo_1" class="md-nav__link">
-    Mini-RAMBo
+  <a href="#skr-pro_1" class="md-nav__link">
+    SKR Pro
   </a>
   
 </li>
@@ -990,15 +997,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#archim_1" class="md-nav__link">
-    Archim
+  <a href="#ramps_1" class="md-nav__link">
+    Ramps
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#ramps_1" class="md-nav__link">
-    Ramps
+  <a href="#mini-rambo_1" class="md-nav__link">
+    Mini-RAMBo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#archim_1" class="md-nav__link">
+    Archim
   </a>
   
 </li>
@@ -1032,13 +1046,6 @@
         <li class="md-nav__item">
   <a href="#work-offsets" class="md-nav__link">
     Work offsets
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-it-is-done-in-the-firmware" class="md-nav__link">
-    How it is done in the firmware
   </a>
   
 </li>
@@ -1508,6 +1515,20 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#skr-pro" class="md-nav__link">
+    SKR Pro
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rambo" class="md-nav__link">
+    RAMBo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#ramps" class="md-nav__link">
     Ramps
   </a>
@@ -1528,13 +1549,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#rambo" class="md-nav__link">
-    RAMBo
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -1549,8 +1563,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#mini-rambo_1" class="md-nav__link">
-    Mini-RAMBo
+  <a href="#skr-pro_1" class="md-nav__link">
+    SKR Pro
   </a>
   
 </li>
@@ -1563,15 +1577,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#archim_1" class="md-nav__link">
-    Archim
+  <a href="#ramps_1" class="md-nav__link">
+    Ramps
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#ramps_1" class="md-nav__link">
-    Ramps
+  <a href="#mini-rambo_1" class="md-nav__link">
+    Mini-RAMBo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#archim_1" class="md-nav__link">
+    Archim
   </a>
   
 </li>
@@ -1605,13 +1626,6 @@
         <li class="md-nav__item">
   <a href="#work-offsets" class="md-nav__link">
     Work offsets
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-it-is-done-in-the-firmware" class="md-nav__link">
-    How it is done in the firmware
   </a>
   
 </li>
@@ -1653,11 +1667,18 @@ job will result in a non square skewed axis. A skewed axis will result in ovals 
 instead of circles and 90° cornered rectangles. Changes in build accuracy due to use and
 environmental conditions need to be adjusted out or accounted for manually. Now just a minor offset
 adjustment will correct this.</p>
-<iframe width="480" height="270" src="https://www.youtube.com/embed/F-tw3WuV8jk?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="200" height="113" src="https://www.youtube.com/embed/F-tw3WuV8jk?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <hr />
 <h2 id="plugging-in-the-steppers">Plugging In The Steppers<a class="headerlink" href="#plugging-in-the-steppers" title="Permanent link">&para;</a></h2>
-<p>Remapping of pins is used in the firmware to allow the use of all the control boards drivers. The
+<p>Marlin&rsquo;s extruders=0 or remapping of pins is used in the firmware to allow the use of all the control boards drivers. The
 unused extruder driver/s are used for the extra stepper/s.</p>
+<h3 id="skr-pro">SKR Pro<a class="headerlink" href="#skr-pro" title="Permanent link">&para;</a></h3>
+<p>If the firmware is set for EXTRUDERS=0 then E0 becomes X1 and E1 becomes Y2. (or LR would be E0=Y2
+E1=Z2)</p>
+<p><div class="lightgallery"><a data-sub-html="dual 0" href="https://www.v1engineering.com/wp-content/uploads/2020/07/dual2-scaled.jpg"><img alt="dual 0" src="https://www.v1engineering.com/wp-content/uploads/2020/07/dual2-scaled.jpg" width="400" /></a></div></p>
+<h3 id="rambo">RAMBo<a class="headerlink" href="#rambo" title="Permanent link">&para;</a></h3>
+<p><div class="lightgallery"><a data-sub-html="Rambo1" href="https://www.v1engineering.com/wp-content/uploads/2017/11/Rambo.jpg"><img alt="Rambo1" src="https://www.v1engineering.com/wp-content/uploads/2017/11/Rambo.jpg" width="400" />
+</a></div><div class="lightgallery"><a data-sub-html="Rambo2" href="https://www.v1engineering.com/wp-content/uploads/2017/11/IMG_20180529_175849.jpg"><img alt="Rambo2" src="https://www.v1engineering.com/wp-content/uploads/2017/11/IMG_20180529_175849.jpg" width="400" /> </a></div></p>
 <h3 id="ramps">Ramps<a class="headerlink" href="#ramps" title="Permanent link">&para;</a></h3>
 <p><div class="lightgallery"><a data-sub-html="Ramps" href="https://www.v1engineering.com/wp-content/uploads/2017/11/Ramps.jpg"><img alt="Ramps" src="https://www.v1engineering.com/wp-content/uploads/2017/11/Ramps.jpg" width="400" /></a></div></p>
 <h3 id="mini-rambo">Mini-RAMBo<a class="headerlink" href="#mini-rambo" title="Permanent link">&para;</a></h3>
@@ -1665,11 +1686,8 @@ unused extruder driver/s are used for the extra stepper/s.</p>
 <p><div class="lightgallery"><a data-sub-html="miniRambo" href="https://www.v1engineering.com/wp-content/uploads/2017/11/MiniRAMBo.jpg"><img alt="miniRambo" src="https://www.v1engineering.com/wp-content/uploads/2017/11/MiniRAMBo.jpg" width="400" /></a></div></p>
 <h3 id="archim">Archim<a class="headerlink" href="#archim" title="Permanent link">&para;</a></h3>
 <p><div class="lightgallery"><a data-sub-html="Archim" href="https://www.v1engineering.com/wp-content/uploads/2017/11/Archim.jpg"><img alt="Archim" src="https://www.v1engineering.com/wp-content/uploads/2017/11/Archim.jpg" width="400" /></a></div></p>
-<h3 id="rambo">RAMBo<a class="headerlink" href="#rambo" title="Permanent link">&para;</a></h3>
-<p><div class="lightgallery"><a data-sub-html="Rambo1" href="https://www.v1engineering.com/wp-content/uploads/2017/11/Rambo.jpg"><img alt="Rambo1" src="https://www.v1engineering.com/wp-content/uploads/2017/11/Rambo.jpg" width="400" />
-</a></div><div class="lightgallery"><a data-sub-html="Rambo2" href="https://www.v1engineering.com/wp-content/uploads/2017/11/IMG_20180529_175849.jpg"><img alt="Rambo2" src="https://www.v1engineering.com/wp-content/uploads/2017/11/IMG_20180529_175849.jpg" width="400" /> </a></div></p>
 <h2 id="endstops">Endstops<a class="headerlink" href="#endstops" title="Permanent link">&para;</a></h2>
-<p>The min pins are used as normal for the first stepper and the max pins are used for the second stepper on that axis, still as a min. For example, X1 pairs with Xmin, X2 pairs with Xmax.</p>
+<p>The min pins are used as normal for the first stepper and the max pins are used for the second stepper on that axis (X2, Y2, Z2), still as a min. For example, X1 pairs with Xmin, X2 pairs with Xmax.</p>
 <p>DO NOT USE THE + (positive) Terminal. <strong>S &amp; –</strong> (signal and Negative) Only</p>
 <ul>
 <li>Xmin=X1 limit switch</li>
@@ -1685,31 +1703,31 @@ three pins, connect these with extreme caution. <strong>Using the wrongs pins wi
 board.</strong></p>
 <p>Optical endstops are not recommended on a machine used for milling or routing. The debris can
 inhibit there function.</p>
-<p>I made modified a few parts to keep the wiring clean, <a href="https://www.thingiverse.com/thing:2847042">Clean Dual Mounts</a>.</p>
+<h3 id="skr-pro_1">SKR Pro<a class="headerlink" href="#skr-pro_1" title="Permanent link">&para;</a></h3>
+<p><div class="lightgallery"><a data-sub-html="endstops" href="https://www.v1engineering.com/wp-content/uploads/2020/07/endstops-scaled.jpg"><img alt="endstops" src="https://www.v1engineering.com/wp-content/uploads/2020/07/endstops-scaled.jpg" width="400" /></a></div></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Do not use the + (positive) pins or you will ruin your SKR Pro board.</p>
+</div>
+<h3 id="rambo_1">RAMBo<a class="headerlink" href="#rambo_1" title="Permanent link">&para;</a></h3>
+<p><div class="lightgallery"><a data-sub-html="pic" href="https://www.v1engineering.com/wp-content/uploads/2018/02/Ramboboard.png"><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2018/02/Ramboboard.png" width="400" />
+</a></div><div class="lightgallery"><a data-sub-html="pic" href="https://www.v1engineering.com/wp-content/uploads/2017/11/Rambo14-DUAL-help-fixed.jpg"><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2017/11/Rambo14-DUAL-help-fixed.jpg" width="400" /></a></div></p>
+<p>Pay attention the pins are opposite each other, but clearly labeled on the board.    </p>
+<h3 id="ramps_1">Ramps<a class="headerlink" href="#ramps_1" title="Permanent link">&para;</a></h3>
+<p><div class="lightgallery"><a data-sub-html="pic" href="https://www.v1engineering.com/wp-content/uploads/2017/11/800px-Arduinomega1-4connectors.png"><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2017/11/800px-Arduinomega1-4connectors.png" width="400" /></a></div></p>
 <h3 id="mini-rambo_1">Mini-RAMBo<a class="headerlink" href="#mini-rambo_1" title="Permanent link">&para;</a></h3>
 <p>This board only has 4 drivers available and can easily be used with the LowRider CNC (Y axis) but
 can not full take advantage of the new firmware with the MPCNC.</p>
 <p><div class="lightgallery"><a data-sub-html="pic" href="https://www.v1engineering.com/wp-content/uploads/2017/11/MiniRambo1.3a-connections.png"><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2017/11/MiniRambo1.3a-connections.png" width="400" /></a></div></p>
-<h3 id="rambo_1">RAMBo<a class="headerlink" href="#rambo_1" title="Permanent link">&para;</a></h3>
-<p><div class="lightgallery"><a data-sub-html="pic" href="https://www.v1engineering.com/wp-content/uploads/2018/02/Ramboboard.png"><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2018/02/Ramboboard.png" width="400" />
-</a></div><div class="lightgallery"><a data-sub-html="pic" href="https://www.v1engineering.com/wp-content/uploads/2017/11/Rambo14-DUAL-help-fixed.jpg"><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2017/11/Rambo14-DUAL-help-fixed.jpg" width="400" /></a></div></p>
-<p>Pay attention the pins are opposite each other, but clearly labeled on the board.</p>
 <h3 id="archim_1">Archim<a class="headerlink" href="#archim_1" title="Permanent link">&para;</a></h3>
 <p><div class="lightgallery"><a data-sub-html="pic" href="https://www.v1engineering.com/wp-content/uploads/2017/11/785px-Archim1.0A_connections.png"><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2017/11/785px-Archim1.0A_connections.png" width="400" /></a></div></p>
-<h3 id="ramps_1">Ramps<a class="headerlink" href="#ramps_1" title="Permanent link">&para;</a></h3>
-<p><div class="lightgallery"><a data-sub-html="pic" href="https://www.v1engineering.com/wp-content/uploads/2017/11/800px-Arduinomega1-4connectors.png"><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2017/11/800px-Arduinomega1-4connectors.png" width="400" /></a></div></p>
 <hr />
 <h2 id="firmware">Firmware<a class="headerlink" href="#firmware" title="Permanent link">&para;</a></h2>
-<p>The dual endstop firmware is on the V1 Engineering <a href="https://github.com/Allted/Marlin">Marlin GitHub</a>
+<p>The dual endstop firmware is on the V1 Engineering <a href="https://docs.v1engineering.com/electronics/marlin-firmware/">Marlin Builder page</a>
 page.</p>
 <p>Remember small 1mm moves when initially powering it up, if driving your steppers the wrong way you
 can rip your machine apart. If your steppers are moving the wrong direction, <strong>completely power off
 your board before flipping the plug over.</strong></p>
-<p>In case you have never used GitHub, the first drop down lets you select the firmware version you
-want.</p>
-<p><div class="lightgallery"><a data-sub-html="pic" href="https://www.v1engineering.com/wp-content/uploads/2017/11/select-github.jpg"><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2017/11/select-github.jpg" width="400" /></a></div></p>
-<p>The next step is download the firmware you selected. Click on “Clone or Download”, then click on “Download Zip”.</p>
-<p><div class="lightgallery"><a data-sub-html="pic" href="https://www.v1engineering.com/wp-content/uploads/2017/11/download-github.jpg"><img alt="pic" src="https://www.v1engineering.com/wp-content/uploads/2017/11/download-github.jpg" width="400" /></a></div></p>
 <hr />
 <h2 id="testing-and-calibration">Testing and Calibration<a class="headerlink" href="#testing-and-calibration" title="Permanent link">&para;</a></h2>
 <p>After all the endstops have been connected issuing a <code>M119</code> command will let you see the current
@@ -1783,16 +1801,6 @@ part it would result in going negative past your endstops and misalign your mach
 <p>To get a more precise work offset it is best to add it in your CAD file. This can be done with a
 bounding box, cut it as a separate path and used to position your material.</p>
 <hr />
-<h2 id="how-it-is-done-in-the-firmware">How it is done in the firmware<a class="headerlink" href="#how-it-is-done-in-the-firmware" title="Permanent link">&para;</a></h2>
-<p>Marlin currently has to have at least one extruder defined, this extruder causes us an issue has we
-need the driver it is assigned to. All boards have and E0 driver (some call it something different),
-and dual firmware capable boards also have an E1 driver, beyond that most boards have breakout pins
-for more external drivers. The first extruder gets assigned to driver E0. To make this all work I
-change pin assignments for E0 to one of the external break pins change the current E1 pins to the E0
-driver, and create an E2 set and assign them the pins of the E1 driver.</p>
-<p>I hope that makes sense, I move E0 pin assingments out of the way and shuffle E1 and E2 down one
-slot.</p>
-<p>All of this happens in the Pins/Pins_XXXX.h files. XXXX=whatever board you are using.</p>
                 
                   
                 
