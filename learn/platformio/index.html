@@ -1497,10 +1497,10 @@
 <p><a href="https://platformio.org/">PlatformIO</a> is another way to prepare firmware (amongst other things) to use on your control board after making any changes or updates. Previously most of us had used ArduinoIDE but PlatformIO is helping to get around some of Arduino&rsquo;s 32bit compile limitiations. Luckily in the end only one single line in the firmware needs to get changed to make it work, and I will be making that change, and you will now be free to decide which you want to use. Even better is this is <strong>cross platform</strong>!</p>
 <hr />
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
-<p>I will write this from a Windows perspective, as far as I know it will look very similar for MAC and Linux. If it does not please help out and add some pictures to clearify.</p>
+<p>I will write this from a Windows perspective, as far as I know it will look very similar for MAC and Linux. If it does not, please help out and add some pictures to clarify.</p>
 <h3 id="install-1-vs-code">Install 1 - VS Code<a class="headerlink" href="#install-1-vs-code" title="Permanent link">&para;</a></h3>
 <p>The first step is to install Microsoft Visual Studio Code. This is <strong>cross platform</strong> and it is a very simple, yet powerful tool. I have used this for a while as my text editor for programming / coding. Previously I tried Atom and Notepad++, this has been more intuitive for me.
-Install <a href="https://code.visualstudio.com/">VS Code</a> on your machine. Download the appropriate version from this link <a href="https://code.visualstudio.com/">VS Code</a>, and follow the prompts. This part should be fairly simple and staright forward. </p>
+Install <a href="https://code.visualstudio.com/">VS Code</a> on your machine. Download the appropriate version from this link <a href="https://code.visualstudio.com/">VS Code</a>, and follow the prompts. This part should be fairly simple and straight forward.</p>
 <h3 id="install-2-platformio">Install 2 - PlatformIO<a class="headerlink" href="#install-2-platformio" title="Permanent link">&para;</a></h3>
 <p>PLatformIO is actually and &ldquo;Extension&rdquo; for VS Code. To install PlatformIO you click on the broken block icon on the left side of VSCODE shown here highlighted.</p>
 <p><div class="lightgallery"><a data-sub-html="VS Code Extension" href="https://www.v1engineering.com/wp-content/uploads/2019/12/Extension.jpg"><img alt="VS Code Extension" src="https://www.v1engineering.com/wp-content/uploads/2019/12/Extension.jpg" width="400" /></a></div></p>
@@ -1524,12 +1524,12 @@ Install <a href="https://code.visualstudio.com/">VS Code</a> on your machine. Do
 <h3 id="build">Build<a class="headerlink" href="#build" title="Permanent link">&para;</a></h3>
 <p>Hit the check mark to build (or compile) the firmware. Most items will say &ldquo;ignored&rdquo; as it only builds for the one specified board.</p>
 <p><div class="lightgallery"><a data-sub-html="VS Code Compile" href="https://www.v1engineering.com/wp-content/uploads/2019/12/build.png"><img alt="VS Code Compile" src="https://www.v1engineering.com/wp-content/uploads/2019/12/build.png" width="400" /></a></div></p>
-<p>At this point you should get a message that says &ldquo;1 succeeded&rdquo;. If you do not the firmwre has build issues and they need to be resolved. </p>
-<p>The next step is to get it onto you board, or if you are sharing your firmware you can skip to the Compile step.</p>
+<p>At this point you should get a message that says &ldquo;1 succeeded&rdquo;. If you do not, the firmware has build issues and they need to be resolved before proceeding further.</p>
+<p>The next step is to get it onto you board, or if you are sharing your firmware, you can skip to the Compile step.</p>
 <p><strong>Flashing</strong> (most common, used with ramps, rambo, mini rambo)</p>
-<p>You do not need to select a com port as in Arduino, just plug in your board and it should be recognized even USB card based boards. Then and hit the right arrow (1) button and wait for it to transfer.</p>
+<p>You do not need to select a com port as in Arduino, just plug in your board and it should be recognized, even USB card based boards. Then hit the right arrow (1) button and wait for it to transfer.</p>
 <p><div class="lightgallery"><a data-sub-html="VS Code Flash" href="https://www.v1engineering.com/wp-content/uploads/2019/12/uploaded_done.png"><img alt="VS Code Flash" src="https://www.v1engineering.com/wp-content/uploads/2019/12/uploaded_done.png" width="400" /></a></div></p>
-<p>When you see (2) &ldquo;1 succeeded&rdquo;, and you are DONE and the board is ready to use!! If you do not see that there are board connection issues.</p>
+<p>When you see (2) &ldquo;1 succeeded&rdquo;, you are DONE and the board is ready to use!! If you do not see that, there are board connection issues.</p>
 <p><strong>Compile to file</strong> (SKR boards)</p>
 <p>If you are trying to share your precompiled firmware, or load it to an SD card enabled board this step is actually already done. You simply need to locate the file that was created during the build. This file should be inside a folder in the previously mentioned Marlin folder that was unzipped, then in a folder titled &ldquo;.pio&rdquo;, then build, then a folder named after your board type. Example &ldquo;Marlin/.pio/build/rambo/firmware.hex&rdquo;</p>
                 
