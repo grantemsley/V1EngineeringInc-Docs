@@ -1154,6 +1154,53 @@
     The ones we have working
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estlcam" class="md-nav__link">
+    Estlcam
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fusion360" class="md-nav__link">
+    Fusion360:
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guffy-fusion360-post-processor" class="md-nav__link">
+    Guffy Fusion360 Post Processor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flyfisher604-fusion360-post-processor" class="md-nav__link">
+    FlyFisher604 Fusion360 Post Processor
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vectric-aspire-vcarve" class="md-nav__link">
+    Vectric, Aspire, Vcarve
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -1637,6 +1684,53 @@
     The ones we have working
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estlcam" class="md-nav__link">
+    Estlcam
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fusion360" class="md-nav__link">
+    Fusion360:
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guffy-fusion360-post-processor" class="md-nav__link">
+    Guffy Fusion360 Post Processor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flyfisher604-fusion360-post-processor" class="md-nav__link">
+    FlyFisher604 Fusion360 Post Processor
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vectric-aspire-vcarve" class="md-nav__link">
+    Vectric, Aspire, Vcarve
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -1843,25 +1937,34 @@ to set the actual speed in each line so it doesn’t matter. There are all sorts
 All machines require a post processor.</p>
 <h3 id="the-ones-we-have-working">The ones we have working<a class="headerlink" href="#the-ones-we-have-working" title="Permanent link">&para;</a></h3>
 <p>Please share your links to other PP’s. I know there are more.</p>
+<h4 id="estlcam">Estlcam<a class="headerlink" href="#estlcam" title="Permanent link">&para;</a></h4>
 <dl>
-<dt>Estlcam</dt>
 <dd>Built in, Christian was happy to work with us to get this correct. <a href="../../software/estlcam-basics/">Here are the recommended
 settings</a></dd>
-<dt>Fusion360</dt>
-<dd>Guffy has really made what seems to be a feature complete PP here, <a href="https://github.com/guffy1234/mpcnc_posts_processor">Guffy’s
-GitHub</a>. <a href="https://www.youtube.com/watch?v=Do_C_NLH5sw">Fusion CAM
-intro</a>.</dd>
 </dl>
+<h4 id="fusion360">Fusion360:<a class="headerlink" href="#fusion360" title="Permanent link">&para;</a></h4>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Fusion&rsquo;s free plan no longer supports more than one speed, so the feedrate for XY turn into very fast Z movements. More details in the forum <a href="https://forum.v1engineering.com/t/problem-with-fusion-and-z-feedrate/21487">here</a></p>
+<p>Fusion&rsquo;s free plan no longer supports more than one speed, so the feedrate for XY turn into very
+fast Z movements. More details in the forum
+<a href="https://forum.v1engineering.com/t/problem-with-fusion-and-z-feedrate/21487">here</a>.</p>
+<p>Using Guffy&rsquo;s v2.0 or the Flyfisher604 PP with scaling enabled can help resolve this issue. </p>
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>(10/23/19) Do not use arcs unless you are using 417 or newer firmware.</p>
-</div>
+<h5 id="guffy-fusion360-post-processor">Guffy Fusion360 Post Processor<a class="headerlink" href="#guffy-fusion360-post-processor" title="Permanent link">&para;</a></h5>
+<p>Guffy has really made what seems to be a feature complete PP here, <a href="https://github.com/guffy1234/mpcnc_posts_processor">Guffy’s
+GitHub</a>. <a href="https://www.youtube.com/watch?v=Do_C_NLH5sw">Fusion CAM
+intro</a>.</p>
+<h5 id="flyfisher604-fusion360-post-processor">FlyFisher604 Fusion360 Post Processor<a class="headerlink" href="#flyfisher604-fusion360-post-processor" title="Permanent link">&para;</a></h5>
+<p>Flyfisher604 has created a Post Processor (<a href="https://github.com/flyfisher604/mpcnc_post_processor">Flyfisher604&rsquo;s
+github</a>) based on Guffy&rsquo;s PP. The Flyfisher604
+post processor addresses the issues introduced by the F360 Hobby version. This includes:</p>
+<ul>
+<li>Scaling of feedrates to resolve MPCNC&rsquo;s max Z feedrate being less then XY max cut rate</li>
+<li>Recovery of the G0 Rapid that moves to the starting location of the cut</li>
+<li>Recovery of G0 Rapids that occur at a safe level above the work</li>
+</ul>
+<h4 id="vectric-aspire-vcarve">Vectric, Aspire, Vcarve<a class="headerlink" href="#vectric-aspire-vcarve" title="Permanent link">&para;</a></h4>
 <dl>
-<dt>Vectric, Aspire, Vcarve</dt>
 <dd>What we have so far, <a href="https://www.v1engineering.com/forum/topic/z-slip-over-large-topographical-map/#post-51193">Here</a>. How to <a href="https://forum.v1engineering.com/t/vectric-aspire/12047/8?u=vicious1">install</a>.</dd>
 </dl>
                 
